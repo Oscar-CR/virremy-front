@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        
+        .circles-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1; 
+        }
+
+        .circle {
+            position: absolute;
+            background-color: #F9D3FF; 
+            border-radius: 50%;
+            z-index: 1; 
+        }
+    </style>
+    <title>Virreymi</title>
+</head>
+<body>
+    <div class="circles-container" id="circles-container"></div>
+
+
+    <header class="border-b-2 border-gray-300 py-4 sticky top-0 bg-white px-10" >
+        <!-- Contenido del encabezado aquí -->
+        <div class="flex items-center justify-between">
+            <h1 class="text-2xl font-bold transition-colors duration-300 ease-in-out hover:text-purple-500"> Logo</h1>
+
+            <ul class="flex space-x-4">
+                <li><a href="#inicio" class="hover:underline hover:text-purple-500">Inicio</a></li>
+                <li><a href="#quienes-somos" class="hover:underline hover:text-purple-500">Quienes somos</a></li>
+                <li><a href="#servicios" class="hover:underline hover:text-purple-500">Servicios</a></li>
+                <li><a href="#contacto" class="hover:underline hover:text-purple-500">Contacto</a></li>
+            </ul>
+        </div>
+        <!-- Otros elementos del encabezado -->
+    </header>
+
+    <img src="./img/banner_principal.png" alt="" style="width: 100%; margin-top: -4px; z-index: 20;">
+   
+    <div class="flex" id="inicio" style="padding: 5% 15% 5% 15%; z-index:100 !important;">
+        <div class="w-1/2 p-4">
+            <!-- Contenido del primer componente -->
+            <h2 class="font-bold" style="font-size: 40px;">¿Sabías que solo el 1% de la población cuenta con fondos de inversión? 1</h2>
+            <!-- Otros elementos del primer componente -->
+        </div>
+        
+        <div class="w-1/2 p-4">
+            <!-- Contenido del segundo componente -->
+            <img src="./img/porcentage.png" alt="">
+            <!-- Otros elementos del segundo componente -->
+        </div>
+    </div>
+   
+    <div class="contenedor" id="quienes-somos" style="padding: 5% 15% 5% 15%;">
+
+        <div class="title mb-10">
+            <h1 class="text-white font-bold" style="width: 240px; font-size: 30px; background-color: #B500D2;">¿Quiénes somos?</h1>
+        </div>
+        <div class="flex">
+            <div class="w-1/2 p-4">
+               <img src="./img/family1.png" alt="">
+            </div>
+            
+            <div class="w-1/2 p-4 font-semibold" style="font-size: 30px;">
+                <p>Nos dedicamos a ofrecer tranquilidad y protección financiera a nuestros clientes.
+                    Nuestra misión es proporcionar soluciones de servicios de calidad que les permitan enfrentar los desafíos de la vida con confianza y seguridad.</p>
+            </div>
+        </div>
+        
+    </div>
+    <div class="contenedor" id="servicios" style="padding: 5% 15% 5% 15%;">
+
+        <div class="title">
+            <h1 class="text-white font-bold mb-10" style="width: 140px; font-size: 30px; background-color: #B500D2;">Servicios</h1>
+        </div>
+        <div class="contenedor mx-auto mt-8">
+            <div class="grid grid-cols-2 gap-8">
+                <div>
+                    <img src="./img/servicio1.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/servicio2.png" alt="">
+                </div>
+
+                <div>
+                    <img src="./img/servicio3.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/servicio4.png" alt="">
+                </div>
+
+                <div>
+                    <img src="./img/servicio5.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/servicio6.png" alt="">
+                </div>
+
+                <div>
+                    <img src="./img/servicio7.png" alt="">
+                </div>
+                <div>
+                    <img src="./img/servicio8.png" alt="">
+                </div>
+            </div>
+        </div>
+
+        <p class="text-center">En asociacion con</p>
+        <img class="mx-auto" src="./img/allianz_logo.png" alt="" style="width: 200px;">
+
+    </div>
+
+
+    <div class="contenedor" style="padding: 5% 15% 5% 15%;">
+
+        <div class="title">
+            <h1 class="text-white font-bold mb-10" style="width: 180px; font-size: 30px; background-color: #B500D2;">Contáctanos</h1>
+        </div>
+        <div class="container mx-auto mt-8">
+            <div class="grid grid-cols-2 gap-8">
+
+                <p class="font-semibold" style="font-size: 30px;">¡Ponte en contácto con nuestros expertos, te llevarán de la mano para elegir un plan que se adapte a tus necesidades!.</p>
+                
+                <div>
+                    <img src="./img/asesor.png" alt="">
+                    <p  style="color: #4F005B; font-size: 24px;" class="text-center font-semibold mt-10">Asesor Financiero Certificado</p>
+                </div>
+                
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="contenedor mx-auto mt-8" id="contacto"  style="padding: 15% 5% 15% 5%;">
+        <form class="bg-white p-8 rounded shadow-lg">
+            <h2 class="text-2xl font-bold mb-6 text-center mb-10" style="color: #4F005B; font-size: 30px;">Solicitud de Seguro</h2>
+
+            <!-- Nombre -->
+            <div class="mb-4">
+                <label for="nombre" class="block text-sm font-semibold text-gray-600 mb-1">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
+            </div>
+
+            <!-- Teléfono -->
+            <div class="mb-4">
+                <label for="telefono" class="block text-sm font-semibold text-gray-600 mb-1">Teléfono</label>
+                <input type="tel" id="telefono" name="telefono" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
+            </div>
+
+            <!-- Correo Electrónico -->
+            <div class="mb-4">
+                <label for="email" class="block text-sm font-semibold text-gray-600 mb-1">Correo Electrónico</label>
+                <input type="email" id="email" name="email" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
+            </div>
+
+            <!-- Tipo de Seguro (Select) -->
+            <div class="mb-4">
+                <label for="tipoSeguro" class="block text-sm font-semibold text-gray-600 mb-1">Tipo de Seguro</label>
+                <select id="tipoSeguro" name="tipoSeguro" class="w-full px-4 py-2 border rounded-md focus:outline-none focus:border-blue-500" required>
+                    <option value="" disabled selected>Seleccione un tipo de seguro</option>
+                    <option value="gastosMedicosMayores">Gastos Médicos Mayores</option>
+                    <option value="seguroVida">Seguro de Vida</option>
+                    <option value="seguroHogar">Seguro de Hogar</option>
+                    <option value="seguroAuto">Seguro de Auto</option>
+                    <option value="retiro">Retiro</option>
+                    <option value="inversion">Inversión</option>
+                    <option value="rentasPrivadas">Rentas Privadas</option>
+                    <option value="polizaComercio">Póliza de Comercio</option>
+                </select>
+            </div>
+
+            <div>
+                <button type="submit" class="text-white px-6 py-2 rounded-md hover:bg-purple-500" style="background-color: #4F005B; ">Enviar</button>
+            </div>
+        </form>
+    </div>
+    <script src="./js/scripts.js"></script>
+
+</body>
+</html>
